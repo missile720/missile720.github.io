@@ -53,9 +53,7 @@
 .title{
     font-size: 100px;
 }
-.fa-bounce:hover{
-    
-}
+
 .carousel-control-next-icon, .carousel-control-prev-icon{
   filter: invert(1);
 }
