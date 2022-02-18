@@ -1,0 +1,57 @@
+.parallaxNav{
+    /* Set a specific height */
+    min-height: 56px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax{
+    /* Set a specific height */
+    min-height: 1000px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imghome{
+    /* The image used */
+    background-image: url("../img/code.jpg");
+}
+
+.lgbt{
+    /* The image used */
+    background-image: url("../img/lgbt.jpeg");
+}
+
+.code1{
+    /* The image used */
+    background-image: url("../img/code1.jpg");    
+}
+
+.code2{
+    /* The image used */
+    background-image: url("../img/code2.png");    
+}
+
+.title{
+    font-size: 100px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  filter: invert(1);
+}
+
+.Quintessential{
+    font-family: 'Quintessential', cursive;
+}
+  
+.Comforter{
+    font-family: 'Comforter', cursive;
+}
