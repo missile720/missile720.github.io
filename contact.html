@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark parallaxNav imghome">
+    <nav class="navbar navbar-expand-lg navbar-dark parallaxNav contact">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="/index.html">Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,9 +48,41 @@
 
     <div class="container-fluid">
       <!-- Home -->
-      <div class = "row parallax imghome" id = "home">
-        <div class = "p-3 mb-5 text-center col-md-8 mx-auto d-flex align-items-center justify-content-center">
-          <h1 class = "display-4 fw-bold text-white Quintessential title">Contact</h1>
+      <div class = "row parallax contact d-flex align-items-center justify-content-center" id = "home">
+        <div class = "p-3 mb-5 text-center col-md-8 mx-auto bg-light" style="--bs-bg-opacity: .5;">
+          <h1 class = "display-4 fw-bold text-black Quintessential title">Contact</h1>
+          <!-- Form -->
+          <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label fw-bold">First Name:</label>
+              <input type="text" class="form-control" id="validationDefault01" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label fw-bold">Last Name:</label>
+              <input type="text" class="form-control" id="validationDefault02" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefaultUsername" class="form-label fw-bold">Email:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-12">
+              <label for="validationDefault03" class="form-label fw-bold">Comments/Questions:</label>
+              <div class="input-group">
+                <textarea class="form-control" aria-label="With textarea" required></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col text-center col-md-8 mx-auto p-3">
+            <a class="btn btn-outline-light btn-lg rounded-circle" href="#contact" role="button">v</a>
+          </div>
         </div>
       </div>
 
@@ -61,16 +93,16 @@
         </div>
         <div class = "row p-3">
           <div class = "col mx-auto text-center">
-            <a href="https://github.com/missile720"><i class="fa-brands fa-github fa-2xl text-white"></i></a>
+            <a href="https://github.com/missile720"><i class="fa-brands fa-github fa-2xl text-white fa-bounce"></i></a>
           </div>
           <div class = "col mx-auto text-center">
-            <a href="https://www.linkedin.com/in/misael-bolainez/"><i class="fa-brands fa-linkedin fa-2xl text-white"></i></a>
+            <a href="https://www.linkedin.com/in/misael-bolainez/"><i class="fa-brands fa-linkedin fa-2xl text-white fa-bounce"></i></a>
           </div>
           <div class = "col mx-auto text-center">
-            <a href="mailto:misaelbolainez@gmail.com"><i class="fa-brands fa-google fa-2xl text-white"></i></a>
+            <a href="mailto:misaelbolainez@gmail.com"><i class="fa-brands fa-google fa-2xl text-white fa-bounce"></i></a>
           </div>
           <div class = "col mx-auto text-center">
-            <a href=""><i class="fa-solid fa-message fa-2xl text-white"></i></a>
+            <a href="/contact.html"><i class="fa-solid fa-message fa-2xl text-white fa-bounce"></i></a>
           </div>
         </div>
         <div class = "row">

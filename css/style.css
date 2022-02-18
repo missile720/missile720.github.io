@@ -30,9 +30,14 @@
     background-image: url("../img/lgbt.jpeg");
 }
 
-.code1{
+.genshin{
     /* The image used */
-    background-image: url("../img/code1.jpg");    
+    background-image: url("../img/genshin.jpg");    
+}
+
+.pokemon{
+    /* The image used */
+    background-image: url("../img/pokemon.jpg");    
 }
 
 .code2{
@@ -40,10 +45,17 @@
     background-image: url("../img/code2.png");    
 }
 
+.contact{
+    /* The image used */
+    background-image: url("../img/contact.jpg");    
+}
+
 .title{
     font-size: 100px;
 }
-
+.fa-bounce:hover{
+    
+}
 .carousel-control-next-icon, .carousel-control-prev-icon{
   filter: invert(1);
 }

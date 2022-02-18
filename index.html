@@ -52,19 +52,34 @@
         <div class = "p-3 mb-5 text-center col-md-8 mx-auto d-flex align-items-center justify-content-center">
           <h1 class = "display-4 fw-bold text-white Quintessential title">Portfolio</h1>
         </div>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col text-center col-md-8 mx-auto p-3">
+            <a class="btn btn-outline-light btn-lg rounded-circle" href="#about" role="button">v</a>
+          </div>
+        </div>
       </div>
 
       <!-- jumbotron -->
       <div class = "row parallax lgbt d-flex align-items-center justify-content-center" id = "about">
         <div class = "p-3 mb-5 text-center col-md-8 mx-auto bg-dark" style="--bs-bg-opacity: .5;">
           <h1 class = "display-4 fw-bold text-white">About Me</h1>
-          <p class = "fs-4 p-3 text-white">Info:</p>
-          <a class="btn btn-outline-light btn-lg p-3" href="https://www.linkedin.com/in/misael-bolainez/" role="button">Linkedin</a>
+          <div class="pic">
+            <img src="/img/face.jpg" class="rounded-circle">
+          </div>
+          <p class = "fs-4 p-3 text-white">My name is Misael Bolainez. I am a recent grad from UC Merced. 
+            I identify as a gay male. My pronouns are He/Him/His. I live in the Central Valley where I am raising my beautiful 
+            three children with my best friend. My hobbies include running, drawing and playing video games.</p>
+        </div>
+        <div class="row d-flex align-items-end justify-content-center">
+          <div class="col text-center col-md-8 mx-auto p-3">
+            <a class="btn btn-outline-light btn-lg rounded-circle" href="#genshin" role="button">v</a>
+          </div>
         </div>
       </div>
 
       <!-- carousel genshin -->
-      <div class="row parallax code1 d-flex align-items-center justify-content-center" id = "genshin">
+      <div class="row parallax genshin d-flex align-items-center justify-content-center p-3" id = "genshin">
+        <h1 class = "display-4 fw-bold text-black text-center">Genshin Project:</h1>
         <div id="carouselExampleDark" class="carousel carousel slide p-5 mb-5 col-md-6 mx-auto" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,36 +92,36 @@
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="./img/genshinHome.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white">
-                <h5>Egg</h5>
-                <p>What pokemon could be inside?</p>
+                <h5>Home Page</h5>
+                <p>User can either login or sign up for an account</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/homePage.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white">
-                <h5>Egg Hatching</h5>
-                <p>It is starting to hatch!</p>
+                <h5>User Home Page</h5>
+                <p>This is the user home page where they can navigate to different pages</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/sharePage.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block  bg-dark bg-opacity-50 text-white">
-                <h5>Pichu</h5>
-                <p>It hatched!</p>
+                <h5>User Team Page</h5>
+                <p>This page displays the users teams</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/teams.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block  bg-dark bg-opacity-50 text-white">
-                <h5>Pikachu</h5>
-                <p>It evolved!</p>
+                <h5>Team Modify Home Page</h5>
+                <p>The user can modify and save their teams</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./img/add.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block  bg-dark bg-opacity-50 text-white">
-                <h5>Raichu</h5>
-                <p>It evolved again!</p>
+                <h5>Team Add Page</h5>
+                <p>User can add a team by selecting characters from the drop down</p>
               </div>
             </div>
           </div>
@@ -124,11 +139,17 @@
             <a class="btn btn-outline-light btn-lg p-3 bg-primary" href="http://missile720.pythonanywhere.com/" role="button">Genshin Project</a>
           </div>
         </div>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col text-center col-md-8 mx-auto p-3">
+            <a class="btn btn-outline-dark btn-lg rounded-circle" href="#pokemon" role="button">v</a>
+          </div>
+        </div>
       </div>
       
 
       <!-- carousel pokemon -->
-      <div class="row parallax code1 d-flex align-items-center justify-content-center" id = "pokemon">
+      <div class="row parallax pokemon d-flex align-items-center justify-content-center p-3" id = "pokemon">
+        <h1 class = "display-4 fw-bold text-black text-center">Pokemon Project:</h1>
         <div id="carousel" class="carousel carousel slide p-5 mb-5 col-md-6 mx-auto" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -141,36 +162,36 @@
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="./img/pokemonHome.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white">
-                <h5>Egg</h5>
-                <p>What pokemon could be inside?</p>
+                <h5>Pokedex Home Page</h5>
+                <p>User can search for Pokemon by various means</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/all.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 text-white">
-                <h5>Egg Hatching</h5>
-                <p>It is starting to hatch!</p>
+                <h5>All Pokemon Page</h5>
+                <p>This list all the pokemon in the database</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/type.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block  bg-dark bg-opacity-50 text-white">
-                <h5>Pichu</h5>
-                <p>It hatched!</p>
+                <h5>Type Page</h5>
+                <p>This page displays Pokemon based on the user input of type</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
               <img src="./img/individual.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block  bg-dark bg-opacity-50 text-white">
-                <h5>Pikachu</h5>
-                <p>It evolved!</p>
+                <h5>Pokemon Page</h5>
+                <p>When a specific Pokemon is searched this page displays all their info</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./img/individual1.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block  bg-dark bg-opacity-50 text-white">
-                <h5>Raichu</h5>
-                <p>It evolved again!</p>
+                <h5>Pokemon Page Part 2</h5>
+                <p>This shows more of the info found on the page</p>
               </div>
             </div>
           </div>
@@ -183,43 +204,53 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col text-center col-md-8 mx-auto p-3">
+            <a class="btn btn-outline-light btn-lg rounded-circle" href="#code" role="button">v</a>
+          </div>
+        </div>
       </div>
 
       <!-- jumbotron -->
       <div class = "row parallax code2 d-flex align-items-center justify-content-center" id = "code">
         <div class = "p-3 mb-5 text-center col-md-8 mx-auto bg-dark" style="--bs-bg-opacity: .5;">
-          <h1 class = "display-4 fw-bold text-white">Code</h1>
+          <h1 class = "display-4 fw-bold text-white">Code Quiz</h1>
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Question #1:
+                  Question #1: What two words does some programmers learn to code first?
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                <div class="accordion-body">"Hello, world."</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Question #2:
+                  Question #2: Why are programmers multilingual?
                 </button>
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div class="accordion-body">They are fluent in more than two languages.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Question #3:
+                  Question #3 (Hint: ASCII): 01011001 01101111 01110101 00100000 01100001 01110010 01100101 00100000 01100001 01110111 01100101 01110011 01101111 01101101 01100101 00100001
                 </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-body">You are awesome!</div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col text-center col-md-8 mx-auto p-3">
+            <a class="btn btn-outline-dark btn-lg rounded-circle" href="#contact" role="button">v</a>
           </div>
         </div>
       </div>
@@ -231,16 +262,16 @@
         </div>
         <div class = "row p-3">
           <div class = "col mx-auto text-center">
-            <a href="https://github.com/missile720"><i class="fa-brands fa-github fa-2xl text-white"></i></a>
+            <a href="https://github.com/missile720"><i class="fa-brands fa-github fa-2xl text-white fa-bounce"></i></a>
           </div>
           <div class = "col mx-auto text-center">
-            <a href="https://www.linkedin.com/in/misael-bolainez/"><i class="fa-brands fa-linkedin fa-2xl text-white"></i></a>
+            <a href="https://www.linkedin.com/in/misael-bolainez/"><i class="fa-brands fa-linkedin fa-2xl text-white fa-bounce"></i></a>
           </div>
           <div class = "col mx-auto text-center">
-            <a href="mailto:misaelbolainez@gmail.com"><i class="fa-brands fa-google fa-2xl text-white"></i></a>
+            <a href="mailto:misaelbolainez@gmail.com"><i class="fa-brands fa-google fa-2xl text-white fa-bounce"></i></a>
           </div>
           <div class = "col mx-auto text-center">
-            <a href="/contact.html"><i class="fa-solid fa-message fa-2xl text-white"></i></a>
+            <a href="/contact.html"><i class="fa-solid fa-message fa-2xl text-white fa-bounce"></i></a>
           </div>
         </div>
         <div class = "row">
