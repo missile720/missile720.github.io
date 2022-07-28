@@ -1,16 +1,7 @@
-# bootstrap-boilerplate
+# Portfolio Website
 
 ## Description
-A basic HTML5 Bootstrap template, includes the required CSS and JS for Bootstrap to run.
-
-## Prerequisites
-- Understanding of [Bootstrap](https://getbootstrap.com/)
-- Strong understanding of HTML5
-
-## Installation
-- [Git](https://git-scm.com/) must be installed
-- Clone repository `git clone <repo>`
-- Text editor or [VS Code](https://code.visualstudio.com/)
+My portfolio site created using HTML, CSS, and vanilla JS
 
 ## License
 Open Source Code
