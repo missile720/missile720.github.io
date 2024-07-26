@@ -54,7 +54,7 @@ nav {
 
 .logo,
 .placeholder {
-  width: 200px;
+  width: 100px;
 }
 
 .nav-buttons {
@@ -69,7 +69,7 @@ nav {
   font-family: "Sriracha", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: max(1.5vw, 14px);
   opacity: 100;
 }
 
@@ -139,7 +139,7 @@ h1 {
 
 .text-hero {
   font-family: "Kanit", sans-serif;
-  font-size: 80px;
+  font-size: 5vw;
   color: #f3f3f4;
   display: flex;
 }
@@ -174,6 +174,7 @@ h1 {
 .down-arrow {
   position: absolute;
   bottom: 20px;
+  left: calc(50% - 32px);
   opacity: 0;
   animation: 1s ease-out 3s 1 fadeIn forwards, 1s ease 4s infinite bounce;
 }
@@ -196,4 +197,57 @@ h1 {
 
 #expertise {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+h2 {
+  font-family: "Kanit", sans-serif;
+  font-size: max(5vw, 40px);
+  font-weight: 300;
+  color: #f3f3f4;
+}
+
+.expertise-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+}
+
+.expertise-skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50vw;
+  margin-top: 60px;
+  padding: 10px;
+  background-color: #15212d;
+  border-radius: 9px;
+  box-shadow: 0px 0px 40px 10px rgba(74,143,231,0.5);
+}
+
+.expertise-skill-container{
+  text-align: center;
+  padding: 5px;
+  color: #f3f3f4;
+}
+
+.expertise-skill-container > img{
+  width: 64px;
+}
+
+.expertise-skill-container > img:hover{
+  animation: .5s ease-out 0s 1 zoom forwards;
+}
+
+@keyframes zoom {
+  0% {
+    
+  }
+  100% {
+    transform: scale(1.25);
+  }
 }
