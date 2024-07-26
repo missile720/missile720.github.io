@@ -67,6 +67,8 @@ window.onscroll = function () {
 };
 let navbar = document.getElementById("navbar");
 let navbarButton = document.getElementsByClassName("nav-button");
+let placeholder = document.getElementById("placeholder-left");
+let placeholderRight = document.getElementById("placeholder-right");
 
 // Set when during scroll to set nav to sticky
 let sticky = 500;
@@ -76,11 +78,15 @@ let transparent = 80;
 function stickyNav() {
   if (window.scrollY >= sticky) {
     navbar.classList.add("sticky");
+    placeholder.classList.add("display-none");
+    placeholderRight.classList.add("display-none");
     for (let i = 0; i < navbarButton.length; i++) {
       navbarButton[i].classList.add("nav-button-transition");
     }
   } else {
     navbar.classList.remove("sticky");
+    placeholder.classList.remove("display-none");
+    placeholderRight.classList.remove("display-none");
     for (let i = 0; i < navbarButton.length; i++) {
       navbarButton[i].classList.remove("nav-button-transition");
     }

@@ -13,11 +13,21 @@ body {
 
 .logo {
   position: absolute;
-  top: 40px;
-  left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  padding: 8px;
   z-index: 1000;
   animation: 1s ease-out 1s 1 slideInFromLeft forwards;
   transform: translateY(-100%);
+  height: 90px;
+}
+
+.img-logo{
+  max-width: 100%;
+  height: auto;
 }
 
 nav {
@@ -26,7 +36,7 @@ nav {
   width: calc(100vw - 33px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   position: absolute;
   animation: 1s ease-out 1s 1 slideInFromLeft forwards;
   transform: translateY(-100%);
@@ -41,6 +51,10 @@ nav {
   }
 }
 
+.display-none{
+  display: none;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -53,9 +67,12 @@ nav {
 }
 
 .logo,
-.placeholder {
-  width: 100px;
+.placeholderLeft,
+.placeholderRight {
+  width: 200px;
 }
+
+
 
 .nav-buttons {
   width: 700px;
@@ -85,6 +102,25 @@ nav {
 .nav-button:hover {
   color: #4a8fe7;
   transition: 0s;
+}
+
+@media (width <= 1164px) {
+  .placeholderRight {
+    display: none;
+  }
+}
+
+@media (width <= 933px) {
+  .logo{
+    width: 20vw;
+  }
+}
+
+@media (width <= 400px) {
+  .logo,
+  .placeholderLeft{
+    display: none;
+  }
 }
 
 .hero-image {
@@ -195,7 +231,9 @@ h1 {
   }
 }
 
-#expertise {
+#expertise,
+#projects,
+#experience {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -209,7 +247,9 @@ h2 {
   color: #f3f3f4;
 }
 
-.expertise-content {
+.expertise-content,
+.projects-content,
+.experience-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,4 +290,32 @@ h2 {
   100% {
     transform: scale(1.25);
   }
+}
+
+.projects-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: max(50vw, 360px);
+  margin-top: 60px;
+  padding: 10px;
+}
+
+.project-card{
+  width: 350px;
+  height: 500px;
+  background-color: #15212d;
+  border-radius: 9px;
+  box-shadow: 0px 0px 40px 10px rgba(74,143,231,0.5);
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  margin-top: 8px;
+  font-size: 25px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  color: #f3f3f4;
 }
