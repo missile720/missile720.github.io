@@ -6,6 +6,44 @@ const words = [
   { text: "Father" },
 ];
 
+const projects = [
+  {
+    link: "https://echo-box-syntax-samurai.vercel.app/",
+    title: "EchoBox",
+    source: "./img/echobox.gif",
+    description:
+      "A playlist aggregator app, to listen to your Spotify and local playlists from a single source",
+  },
+  {
+    link: "https://quizzical-scrimba-site.netlify.app/",
+    title: "Quizzical",
+    source: "./img/quizzical.gif",
+    description:
+      "Quiz app that fetches quiz questions from an API using React",
+  },
+  {
+    link: "https://minesweeper-js-missile.netlify.app/",
+    title: "Minesweeper",
+    source: "./img/minesweeper.gif",
+    description:
+      "Minesweeper game where the user plays to find all the bombs without detonating them",
+  },
+  {
+    link: "https://tic-tac-toe-missile.netlify.app/",
+    title: "Tic-Tac-Toe",
+    source: "./img/tic-tac-toe.gif",
+    description:
+      "Tic-tac-toe game where the user plays versus the computer. The user also has the ability to change the difficulty of the game",
+  },
+  {
+    link: "https://boggle-js.netlify.app/",
+    title: "Boggle",
+    source: "./img/boggle.gif",
+    description:
+      "Boggle game where the user plays for the highest score within a certain time limit",
+  }
+];
+
 //runs textAnimation function at start of page
 textAnimation(words);
 
@@ -101,4 +139,16 @@ function stickyNav() {
       navbarButton[i].classList.remove("nav-button-transparent");
     }
   }
+}
+
+// adds each card in array in html line 114 
+for(let i = 0; i < projects.length; i++){
+  document.querySelector(".projects-container").innerHTML += `
+  <a href="${projects[i].link}" target="_blank" rel="noopener noreferrer">
+    <div class="project-card">
+      <h3>${projects[i].title}</h3>
+      <img src="${projects[i].source}" alt="Misael Bolainez">
+      <p>${projects[i].description}</p>
+    </div>
+  </a>`;
 }
