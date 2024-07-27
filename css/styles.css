@@ -116,7 +116,7 @@ nav {
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 550px) {
   .logo,
   .placeholderLeft{
     display: none;
@@ -234,7 +234,7 @@ h1 {
 #expertise,
 #projects,
 #experience {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   padding-top: 150px;
@@ -258,7 +258,7 @@ h2 {
 
 .expertise-skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   width: 50vw;
@@ -297,19 +297,25 @@ h2 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: max(50vw, 360px);
+  width: max(70vw, 360px);
   margin-top: 60px;
   padding: 10px;
+}
+
+.projects-container > a {
+  text-decoration: none;
+  margin: 45px;
 }
 
 .project-card{
   width: 350px;
   height: 500px;
   background-color: #15212d;
-  border-radius: 9px;
+  border-radius: 10px;
   box-shadow: 0px 0px 40px 10px rgba(74,143,231,0.5);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 h3 {
@@ -317,5 +323,21 @@ h3 {
   font-size: 25px;
   font-family: "Kanit", sans-serif;
   font-weight: 300;
+  color: #f3f3f4;
+}
+
+.project-card > img {
+  width: 250px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.project-card > p {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 12px;
   color: #f3f3f4;
 }
