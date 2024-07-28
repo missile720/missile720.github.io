@@ -338,3 +338,111 @@ h3 {
   padding: 12px;
   color: #f3f3f4;
 }
+
+.timeline-container{
+  position: relative;
+  width: max(85vw, 360px);
+  margin-top: 60px;
+  box-sizing: border-box;
+}
+
+.timeline-container::after{
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #17bebb;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container{
+  padding: 35px 40px;
+  position: relative;
+  background-color: inherit;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.container::after{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12.5px;
+  background-color: #17bebb;
+  border-radius: 50%;
+  top: calc(50% - 12.5px);
+  z-index: 1;
+}
+
+.left{
+  left: 0;
+  text-align: right;
+}
+
+.right{
+  left: 50%;
+  text-align: left;
+}
+
+.right::after{
+  left: -12.5px;
+}
+
+.content{
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #15212d;
+  box-shadow: 0px 0px 40px 10px rgba(74,143,231,0.5);
+}
+
+.content > h3 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.content > p, h4 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  color: #f3f3f4;
+  margin-top: 3px;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+.experience-title{
+  color: #17bebb;
+}
+
+.content > p {
+  font-size: 16px;
+  color: #f3f3f4;
+}
+
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  .timeline-container::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 18.5px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
