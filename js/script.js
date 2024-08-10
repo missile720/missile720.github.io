@@ -8,6 +8,13 @@ const words = [
 
 const projects = [
   {
+    link: "https://smart-pantry-khaki.vercel.app/",
+    title: "SmartPantry",
+    source: "./img/smartpantry.gif",
+    description:
+      "Pantry tracker that allows users to virtually store their ingredients and get AI recommended recipe based on their ingredients",
+  },
+  {
     link: "https://echo-box-syntax-samurai.vercel.app/",
     title: "EchoBox",
     source: "./img/echobox.gif",
