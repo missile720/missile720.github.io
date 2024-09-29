@@ -8,6 +8,13 @@ const words = [
 
 const projects = [
   {
+    link: "https://eats-in-reach.vercel.app/",
+    title: "Eats in Reach",
+    source: "./img/eatsInReach.gif",
+    description:
+      "A full stack application using Next.js, Firebase, and PostgreSQL, enabling streamlined user logins, vendor management, and admin oversight to connect users with local food vendors through a dynamic, role-based platform.",
+  },
+  {
     link: "https://smart-pantry-khaki.vercel.app/",
     title: "SmartPantry",
     source: "./img/smartpantry.gif",
